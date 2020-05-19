@@ -19,6 +19,15 @@ body{
 h1{
     color:var(--secundario);
     text-align: center;
+    font-size: 4rem;
+    font-family: var(--fuentePrincipal);
+}
+.contenedor{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
 }
 .header{
     display: grid;
@@ -44,4 +53,18 @@ h1{
 }
 .barra .nav a:hover{
     color:var(--secundario);
+}
+.lista-productos{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+@media (min-width: 768px) {
+    .lista-productos{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+.producto{
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
 }
